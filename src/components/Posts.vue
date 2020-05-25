@@ -1,7 +1,7 @@
 <template>
   <div class="posts">
     <article v-for="(post, index) of posts" :key="'post' + index">
-      <Post :post="post" />
+      <Post :post="post" v-on:delete-post="$emit('delete-post', post.id)" />
     </article>
   </div>
 </template>
@@ -38,6 +38,6 @@ article {
   width: 15rem;
   padding: 0.5rem 1.2rem;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
 }
 </style>
