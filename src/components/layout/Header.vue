@@ -1,0 +1,27 @@
+<template>
+  <div>
+    <header class="header">
+      <h1>Typiposts</h1>
+      <!-- <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </div> -->
+      <!-- <router-view /> -->
+    </header>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Header',
+};
+</script>
+
+<style scoped>
+.header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+</style>
